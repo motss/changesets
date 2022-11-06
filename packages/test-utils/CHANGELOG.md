@@ -1,5 +1,15 @@
 # @changesets/test-utils
 
+## [0.0.7](https://github.com/changesets/changesets/releases/tag/@motss-changesets/test-utils/v0.0.7)
+
+### Patch Changes
+
+- chore: bump all packages
+  ([`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)]:
+  - @motss-changesets/logger@0.0.7
+
 ## [0.0.6](https://github.com/changesets/changesets/releases/tag/@motss-changesets/test-utils/v0.0.6)
 
 ### Patch Changes

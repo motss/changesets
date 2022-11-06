@@ -1,12 +1,12 @@
 {
   "name": "@motss-changesets/changelog-git",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "A changelog entry generator for git that writes hashes",
   "main": "dist/changelog-git.cjs.js",
   "module": "dist/changelog-git.esm.js",
   "license": "MIT",
   "repository": "https://github.com/changesets/changesets/tree/main/packages/changelog-git",
   "dependencies": {
-    "@motss-changesets/types": "^5.2.1"
+    "@motss-changesets/types": "^5.2.2"
   }
 }

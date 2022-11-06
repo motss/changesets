@@ -1,5 +1,15 @@
 # @changesets/write
 
+## [0.2.4](https://github.com/changesets/changesets/releases/tag/@motss-changesets/write/v0.2.4)
+
+### Patch Changes
+
+- chore: bump all packages
+  ([`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)]:
+  - @motss-changesets/types@5.2.2
+
 ## [0.2.3](https://github.com/changesets/changesets/releases/tag/@motss-changesets/write/v0.2.3)
 
 ### Patch Changes

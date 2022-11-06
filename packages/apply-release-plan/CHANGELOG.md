@@ -1,5 +1,18 @@
 # @changesets/apply-release-plan
 
+## [6.2.1](https://github.com/changesets/changesets/releases/tag/@motss-changesets/apply-release-plan/v6.2.1)
+
+### Patch Changes
+
+- chore: bump all packages
+  ([`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)]:
+  - @motss-changesets/config@2.2.2
+  - @motss-changesets/get-version-range-type@0.3.4
+  - @motss-changesets/git@1.6.1
+  - @motss-changesets/types@5.2.2
+
 ## [6.2.0](https://github.com/changesets/changesets/releases/tag/@motss-changesets/apply-release-plan/v6.2.0)
 
 ### Minor Changes

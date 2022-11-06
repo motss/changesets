@@ -1,12 +1,12 @@
 {
   "name": "@motss-changesets/release-utils",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "main": "dist/release-utils.cjs.js",
   "dependencies": {
     "@manypkg/get-packages": "^1.1.3",
-    "@motss-changesets/pre": "^1.0.14",
-    "@motss-changesets/read": "^0.6.0",
-    "@motss-changesets/types": "^5.2.1",
+    "@motss-changesets/pre": "^1.0.15",
+    "@motss-changesets/read": "^0.6.1",
+    "@motss-changesets/types": "^5.2.2",
     "fs-extra": "^7.0.1",
     "mdast-util-to-string": "^1.0.6",
     "remark-parse": "^7.0.1",

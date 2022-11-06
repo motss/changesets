@@ -1,5 +1,15 @@
 # get-workspaces
 
+## [1.0.11](https://github.com/changesets/changesets/releases/tag/get-workspaces/v1.0.11)
+
+### Patch Changes
+
+- chore: bump all packages
+  ([`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)]:
+  - @motss-changesets/types@5.2.2
+
 ## [1.0.10](https://github.com/changesets/changesets/releases/tag/get-workspaces/v1.0.10)
 
 ### Patch Changes

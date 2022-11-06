@@ -1,5 +1,12 @@
 # @changesets/types
 
+## [5.2.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/types/v5.2.2)
+
+### Patch Changes
+
+- chore: bump all packages
+  ([`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)) ([@motss](https://github.com/motss))
+
 ## [5.2.1](https://github.com/changesets/changesets/releases/tag/@motss-changesets/types/v5.2.1)
 
 ### Patch Changes
