@@ -109,6 +109,7 @@ const changelogFunctions: ChangelogFunctions = {
         {
           changeset,
           links,
+          prFromSummary,
         },
         null,
         2
