@@ -1,5 +1,18 @@
 # @changesets/read
 
+## [0.6.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/read/v0.6.2)
+
+### Patch Changes
+
+- chore: remove unused package, bump-all
+  ([`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)]:
+  - @motss-changesets/git@1.6.2
+  - @motss-changesets/logger@0.0.8
+  - @motss-changesets/parse@0.3.18
+  - @motss-changesets/types@5.2.3
+
 ## [0.6.1](https://github.com/changesets/changesets/releases/tag/@motss-changesets/read/v0.6.1)
 
 ### Patch Changes

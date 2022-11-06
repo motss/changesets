@@ -1,6 +1,6 @@
 {
   "name": "@motss-changesets/write",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Writes a changeset to a file",
   "main": "dist/write.cjs.js",
   "module": "dist/write.esm.js",
@@ -8,7 +8,7 @@
   "repository": "https://github.com/changesets/changesets/tree/main/packages/write",
   "dependencies": {
     "@babel/runtime": "^7.10.4",
-    "@motss-changesets/types": "^5.2.2",
+    "@motss-changesets/types": "^5.2.3",
     "fs-extra": "^7.0.1",
     "human-id": "^1.0.2",
     "prettier": "^2.7.1"

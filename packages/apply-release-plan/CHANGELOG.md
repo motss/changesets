@@ -1,5 +1,18 @@
 # @changesets/apply-release-plan
 
+## [6.2.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/apply-release-plan/v6.2.2)
+
+### Patch Changes
+
+- chore: remove unused package, bump-all
+  ([`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)]:
+  - @motss-changesets/config@2.2.3
+  - @motss-changesets/get-version-range-type@0.3.5
+  - @motss-changesets/git@1.6.2
+  - @motss-changesets/types@5.2.3
+
 ## [6.2.1](https://github.com/changesets/changesets/releases/tag/@motss-changesets/apply-release-plan/v6.2.1)
 
 ### Patch Changes

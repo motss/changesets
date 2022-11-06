@@ -1,5 +1,27 @@
 # @changesets/cli
 
+## [2.26.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/cli/v2.26.2)
+
+### Patch Changes
+
+- chore: remove unused package, bump-all
+  ([`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)]:
+  - @motss-changesets/apply-release-plan@6.2.2
+  - @motss-changesets/assemble-release-plan@5.2.5
+  - @motss-changesets/changelog-git@0.1.16
+  - @motss-changesets/config@2.2.3
+  - @motss-changesets/errors@0.1.7
+  - @motss-changesets/get-dependents-graph@1.3.7
+  - @motss-changesets/get-release-plan@3.0.18
+  - @motss-changesets/git@1.6.2
+  - @motss-changesets/logger@0.0.8
+  - @motss-changesets/pre@1.0.16
+  - @motss-changesets/read@0.6.2
+  - @motss-changesets/types@5.2.3
+  - @motss-changesets/write@0.2.5
+
 ## [2.26.1](https://github.com/changesets/changesets/releases/tag/@motss-changesets/cli/v2.26.1)
 
 ### Patch Changes

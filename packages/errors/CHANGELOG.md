@@ -1,5 +1,12 @@
 # @changesets/errors
 
+## [0.1.7](https://github.com/changesets/changesets/releases/tag/@motss-changesets/errors/v0.1.7)
+
+### Patch Changes
+
+- chore: remove unused package, bump-all
+  ([`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)) ([@motss](https://github.com/motss))
+
 ## [0.1.6](https://github.com/changesets/changesets/releases/tag/@motss-changesets/errors/v0.1.6)
 
 ### Patch Changes
