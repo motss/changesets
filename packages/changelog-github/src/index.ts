@@ -112,16 +112,18 @@ const changelogFunctions: ChangelogFunctions = {
           .join(", ")
       : links.user;
 
-    const futureLines2 = futureLines.map((l) => `  ${l}`).join("\n");
-    const a = [
-      "\n\n",
-      `* ${firstLine}\n${futureLines2.trimEnd()}`,
-      links.pull ? ` (${links.pull})` : "",
-      links.commit ? ` (${links.commit})` : "",
-      users ? ` (${users})` : "",
+    const suffix = [
+      links.pull ? `(${links.pull})` : "",
+      links.commit ? `(${links.commit})` : "",
+      users ? `(${users})` : "",
     ]
       .filter((n) => n)
-      .join("");
+      .join(" ");
+    const futureLines2 = futureLines.map((l) => `  ${l}`).join("\n");
+    const futureLines3 = suffix
+      ? `${futureLines2.trimEnd()} ${suffix}\n`
+      : futureLines2;
+    const a = ["\n\n", `* ${firstLine}\n${futureLines3}`].join("");
 
     // const prefix = [
     //   links.pull === null ? "" : ` ${links.pull}`,
