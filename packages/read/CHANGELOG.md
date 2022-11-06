@@ -1,5 +1,29 @@
 # @changesets/read
 
+## [0.6.0](https://github.com/changesets/changesets/releases/tag/@motss-changesets/read/v0.6.0)
+
+### Minor Changes
+
+- feat: opinionated customizations
+  ([`61244d0`](https://github.com/changesets/changesets/commit/61244d0614a33d8118d156e013cd5f5827fab83e)) ([@motss](https://github.com/motss))
+
+### Patch Changes
+
+- chore: rename all scope in dependencies
+  ([`c1a4420`](https://github.com/changesets/changesets/commit/c1a442099d818aa3f35e7a287c28b3e399994a83)) ([@motss](https://github.com/motss))
+
+- chore: update debugging
+  ([`89a86b9`](https://github.com/changesets/changesets/commit/89a86b93b1ed6f1456bc7979e6a6c48f012e19f1)) ([@motss](https://github.com/motss))
+
+- chore: rename scope and update release yaml
+  ([`7c7b8db`](https://github.com/changesets/changesets/commit/7c7b8db69744cdb74689d46b00994f983a566d72)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`61244d0`](https://github.com/changesets/changesets/commit/61244d0614a33d8118d156e013cd5f5827fab83e), [`c1a4420`](https://github.com/changesets/changesets/commit/c1a442099d818aa3f35e7a287c28b3e399994a83), [`7c7b8db`](https://github.com/changesets/changesets/commit/7c7b8db69744cdb74689d46b00994f983a566d72)]:
+  - @motss-changesets/git@1.6.0
+  - @motss-changesets/logger@0.0.6
+  - @motss-changesets/parse@0.3.16
+  - @motss-changesets/types@5.2.1
+
 ## 0.5.8
 
 ### Patch Changes

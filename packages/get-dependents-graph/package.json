@@ -1,6 +1,6 @@
 {
   "name": "@motss-changesets/get-dependents-graph",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "Get the graph of dependents in a monorepo",
   "main": "dist/get-dependents-graph.cjs.js",
   "module": "dist/get-dependents-graph.esm.js",
@@ -8,7 +8,7 @@
   "repository": "https://github.com/changesets/changesets/tree/main/packages/get-dependents-graph",
   "dependencies": {
     "@manypkg/get-packages": "^1.1.3",
-    "@motss-changesets/types": "^5.2.0",
+    "@motss-changesets/types": "^5.2.1",
     "chalk": "^2.1.0",
     "fs-extra": "^7.0.1",
     "semver": "^5.4.1"

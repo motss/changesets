@@ -1,5 +1,12 @@
 # @changesets/types
 
+## [5.2.1](https://github.com/changesets/changesets/releases/tag/@motss-changesets/types/v5.2.1)
+
+### Patch Changes
+
+- chore: rename scope and update release yaml
+  ([`7c7b8db`](https://github.com/changesets/changesets/commit/7c7b8db69744cdb74689d46b00994f983a566d72)) ([@motss](https://github.com/motss))
+
 ## 5.2.0
 
 ### Minor Changes

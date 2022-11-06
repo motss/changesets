@@ -1,6 +1,6 @@
 {
   "name": "@motss-changesets/git",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Some git helpers that changesets use to get information",
   "main": "dist/git.cjs.js",
   "module": "dist/git.esm.js",
@@ -9,8 +9,8 @@
   "dependencies": {
     "@babel/runtime": "^7.10.4",
     "@manypkg/get-packages": "^1.1.3",
-    "@motss-changesets/errors": "^0.1.4",
-    "@motss-changesets/types": "^5.2.0",
+    "@motss-changesets/errors": "^0.1.5",
+    "@motss-changesets/types": "^5.2.1",
     "is-subdir": "^1.1.1",
     "spawndamnit": "^2.0.0"
   },
