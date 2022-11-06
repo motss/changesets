@@ -1,5 +1,5 @@
 {
-  "name": "@changesets/errors",
+  "name": "@motss-changesets/errors",
   "version": "0.1.4",
   "description": "Error classes for @changesets",
   "main": "dist/errors.cjs.js",

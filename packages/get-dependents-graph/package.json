@@ -1,5 +1,5 @@
 {
-  "name": "@changesets/get-dependents-graph",
+  "name": "@motss-changesets/get-dependents-graph",
   "version": "1.3.4",
   "description": "Get the graph of dependents in a monorepo",
   "main": "dist/get-dependents-graph.cjs.js",

@@ -1,5 +1,5 @@
 {
-  "name": "@changesets/changelog-github",
+  "name": "@motss-changesets/changelog-github",
   "version": "0.4.7",
   "description": "A changelog entry generator for GitHub that links to commits, PRs and users",
   "main": "dist/changelog-github.cjs.js",

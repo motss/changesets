@@ -1,5 +1,5 @@
 {
-  "name": "@changesets/parse",
+  "name": "@motss-changesets/parse",
   "version": "0.3.15",
   "description": "Parse a changeset file's contents into a usable json object",
   "main": "dist/parse.cjs.js",

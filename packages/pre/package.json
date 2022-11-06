@@ -1,5 +1,5 @@
 {
-  "name": "@changesets/pre",
+  "name": "@motss-changesets/pre",
   "version": "1.0.13",
   "description": "Utils to make a Changesets repo enter and exit pre mode",
   "main": "dist/pre.cjs.js",
