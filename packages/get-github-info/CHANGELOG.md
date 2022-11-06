@@ -1,5 +1,12 @@
 # @changesets/get-github-info
 
+## [0.5.4](https://github.com/changesets/changesets/releases/tag/@motss-changesets/get-github-info/v0.5.4)
+
+### Patch Changes
+
+- chore: remove unused package, bump-all
+  ([`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)) ([@motss](https://github.com/motss))
+
 ## [0.5.3](https://github.com/changesets/changesets/releases/tag/@motss-changesets/get-github-info/v0.5.3)
 
 ### Patch Changes

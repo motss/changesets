@@ -1,13 +1,13 @@
 {
   "name": "@motss-changesets/parse",
-  "version": "0.3.17",
+  "version": "0.3.18",
   "description": "Parse a changeset file's contents into a usable json object",
   "main": "dist/parse.cjs.js",
   "module": "dist/parse.esm.js",
   "license": "MIT",
   "repository": "https://github.com/changesets/changesets/tree/main/packages/parse",
   "dependencies": {
-    "@motss-changesets/types": "^5.2.2",
+    "@motss-changesets/types": "^5.2.3",
     "js-yaml": "^3.13.1"
   },
   "devDependencies": {

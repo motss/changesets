@@ -1,5 +1,12 @@
 # @changesets/logger
 
+## [0.0.8](https://github.com/changesets/changesets/releases/tag/@motss-changesets/logger/v0.0.8)
+
+### Patch Changes
+
+- chore: remove unused package, bump-all
+  ([`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)) ([@motss](https://github.com/motss))
+
 ## [0.0.7](https://github.com/changesets/changesets/releases/tag/@motss-changesets/logger/v0.0.7)
 
 ### Patch Changes

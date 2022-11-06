@@ -1,5 +1,18 @@
 # @changesets/config
 
+## [2.2.3](https://github.com/changesets/changesets/releases/tag/@motss-changesets/config/v2.2.3)
+
+### Patch Changes
+
+- chore: remove unused package, bump-all
+  ([`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)]:
+  - @motss-changesets/errors@0.1.7
+  - @motss-changesets/get-dependents-graph@1.3.7
+  - @motss-changesets/logger@0.0.8
+  - @motss-changesets/types@5.2.3
+
 ## [2.2.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/config/v2.2.2)
 
 ### Patch Changes

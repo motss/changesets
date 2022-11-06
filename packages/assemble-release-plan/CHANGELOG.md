@@ -1,5 +1,17 @@
 # @changesets/assemble-release-plan
 
+## [5.2.5](https://github.com/changesets/changesets/releases/tag/@motss-changesets/assemble-release-plan/v5.2.5)
+
+### Patch Changes
+
+- chore: remove unused package, bump-all
+  ([`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`e208e88`](https://github.com/changesets/changesets/commit/e208e88c7ed4ffafad4f545385ec5393bf154de6)]:
+  - @motss-changesets/errors@0.1.7
+  - @motss-changesets/get-dependents-graph@1.3.7
+  - @motss-changesets/types@5.2.3
+
 ## [5.2.4](https://github.com/changesets/changesets/releases/tag/@motss-changesets/assemble-release-plan/v5.2.4)
 
 ### Patch Changes

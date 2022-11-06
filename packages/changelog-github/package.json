@@ -1,14 +1,14 @@
 {
   "name": "@motss-changesets/changelog-github",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A changelog entry generator for GitHub that links to commits, PRs and users",
   "main": "dist/changelog-github.cjs.js",
   "module": "dist/changelog-github.esm.js",
   "license": "MIT",
   "repository": "https://github.com/changesets/changesets/tree/main/packages/changelog-github",
   "dependencies": {
-    "@motss-changesets/get-github-info": "^0.5.3",
-    "@motss-changesets/types": "^5.2.2",
+    "@motss-changesets/get-github-info": "^0.5.4",
+    "@motss-changesets/types": "^5.2.3",
     "dotenv": "^8.1.0"
   },
   "devDependencies": {
