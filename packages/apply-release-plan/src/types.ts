@@ -1,4 +1,4 @@
-import { NewChangeset } from "@changesets/types";
+import { NewChangeset } from "@motss-changesets/types";
 
 export type RelevantChangesets = {
   major: NewChangeset[];

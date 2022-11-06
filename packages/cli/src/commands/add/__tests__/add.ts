@@ -1,10 +1,10 @@
 import path from "path";
 import fixtures from "fixturez";
 import stripAnsi from "strip-ansi";
-import * as git from "@changesets/git";
-import { defaultConfig } from "@changesets/config";
-import { silenceLogsInBlock } from "@changesets/test-utils";
-import writeChangeset from "@changesets/write";
+import * as git from "@motss-changesets/git";
+import { defaultConfig } from "@motss-changesets/config";
+import { silenceLogsInBlock } from "@motss-changesets/test-utils";
+import writeChangeset from "@motss-changesets/write";
 
 import {
   askCheckboxPlus,
@@ -18,8 +18,8 @@ import addChangeset from "..";
 const f = fixtures(__dirname);
 
 jest.mock("../../../utils/cli-utilities");
-jest.mock("@changesets/git");
-jest.mock("@changesets/write");
+jest.mock("@motss-changesets/git");
+jest.mock("@motss-changesets/write");
 // @ts-ignore
 writeChangeset.mockImplementation(() => Promise.resolve("abcdefg"));
 // @ts-ignore

@@ -1,9 +1,9 @@
 import publishPackages, { PublishedResult } from "./publishPackages";
-import { ExitError } from "@changesets/errors";
-import { error, log, success, warn } from "@changesets/logger";
-import * as git from "@changesets/git";
-import { readPreState } from "@changesets/pre";
-import { Config, PreState } from "@changesets/types";
+import { ExitError } from "@motss-changesets/errors";
+import { error, log, success, warn } from "@motss-changesets/logger";
+import * as git from "@motss-changesets/git";
+import { readPreState } from "@motss-changesets/pre";
+import { Config, PreState } from "@motss-changesets/types";
 import { getPackages } from "@manypkg/get-packages";
 import chalk from "chalk";
 import { getUntaggedPrivatePackages } from "./getUntaggedPrivatePackages";

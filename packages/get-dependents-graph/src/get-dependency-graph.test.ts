@@ -1,4 +1,4 @@
-import { temporarilySilenceLogs } from "@changesets/test-utils";
+import { temporarilySilenceLogs } from "@motss-changesets/test-utils";
 import getDependencyGraph from "./get-dependency-graph";
 
 const consoleError = console.error;

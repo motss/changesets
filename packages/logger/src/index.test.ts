@@ -1,6 +1,6 @@
 import { log, error, info, warn, success } from "./index";
 
-describe("@changesets/logger", () => {
+describe("@motss-changesets/logger", () => {
   const logMessageOne = "Message 1";
   const logMessageTwo = "Message 2";
   const expectedLoggedRegex = new RegExp(

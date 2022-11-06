@@ -1,6 +1,6 @@
-import { PreState, NewChangeset } from "@changesets/types";
-import { readPreState } from "@changesets/pre";
-import readChangesets from "@changesets/read";
+import { PreState, NewChangeset } from "@motss-changesets/types";
+import { readPreState } from "@motss-changesets/pre";
+import readChangesets from "@motss-changesets/read";
 
 export type ChangesetState = {
   preState: PreState | undefined;

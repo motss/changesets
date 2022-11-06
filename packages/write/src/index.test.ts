@@ -2,8 +2,8 @@ import fixtures from "fixturez";
 
 import fs from "fs-extra";
 import path from "path";
-import parse from "@changesets/parse";
-import { Release } from "@changesets/types";
+import parse from "@motss-changesets/parse";
+import { Release } from "@motss-changesets/types";
 import writeChangeset from "./";
 
 import humanId from "human-id";

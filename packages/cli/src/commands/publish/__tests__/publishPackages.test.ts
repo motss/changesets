@@ -3,7 +3,7 @@ import fixtures from "fixturez";
 import publishPackages from "../publishPackages";
 import * as npmUtils from "../npm-utils";
 import { getPackages } from "@manypkg/get-packages";
-import { silenceLogsInBlock } from "@changesets/test-utils";
+import { silenceLogsInBlock } from "@motss-changesets/test-utils";
 
 jest.mock("../npm-utils");
 jest.mock("is-ci", () => true);

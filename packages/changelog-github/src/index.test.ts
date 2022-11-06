@@ -1,11 +1,11 @@
 import changelogFunctions from "./index";
-import parse from "@changesets/parse";
+import parse from "@motss-changesets/parse";
 
 const getReleaseLine = changelogFunctions.getReleaseLine;
 
 jest.mock(
-  "@changesets/get-github-info",
-  (): typeof import("@changesets/get-github-info") => {
+  "@motss-changesets/get-github-info",
+  (): typeof import("@motss-changesets/get-github-info") => {
     // this is duplicated because jest.mock reordering things
     const data = {
       commit: "a085003",

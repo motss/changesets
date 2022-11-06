@@ -1,19 +1,19 @@
 import fixtures from "fixturez";
 import fs from "fs-extra";
 import path from "path";
-import * as git from "@changesets/git";
-import { defaultConfig } from "@changesets/config";
-import { silenceLogsInBlock } from "@changesets/test-utils";
-import writeChangeset from "@changesets/write";
+import * as git from "@motss-changesets/git";
+import { defaultConfig } from "@motss-changesets/config";
+import { silenceLogsInBlock } from "@motss-changesets/test-utils";
+import writeChangeset from "@motss-changesets/write";
 
 import status from "..";
 
 import humanId from "human-id";
-import { NewChangeset, ReleasePlan } from "@changesets/types";
+import { NewChangeset, ReleasePlan } from "@motss-changesets/types";
 import { Package } from "@manypkg/get-packages";
 
 jest.mock("human-id");
-jest.mock("@changesets/git");
+jest.mock("@motss-changesets/git");
 
 const f = fixtures(__dirname);
 

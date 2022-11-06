@@ -1,11 +1,11 @@
 import fixtures from "fixturez";
 import { silenceLogsInBlock } from "../../../../../test-utils/src";
-import * as git from "@changesets/git";
+import * as git from "@motss-changesets/git";
 import tag from "../index";
 
 const f = fixtures(__dirname);
 
-jest.mock("@changesets/git");
+jest.mock("@motss-changesets/git");
 
 describe("tag command", () => {
   silenceLogsInBlock();

@@ -4,10 +4,10 @@ import {
   ChangelogFunctions,
   NewChangeset,
   ModCompWithPackage,
-} from "@changesets/types";
+} from "@motss-changesets/types";
 
-import { defaultConfig } from "@changesets/config";
-import * as git from "@changesets/git";
+import { defaultConfig } from "@motss-changesets/config";
+import * as git from "@motss-changesets/git";
 import resolveFrom from "resolve-from";
 import { Packages } from "@manypkg/get-packages";
 import detectIndent from "detect-indent";

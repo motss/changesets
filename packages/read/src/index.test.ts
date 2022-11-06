@@ -2,7 +2,7 @@ import fixtures from "fixturez";
 import outdent from "outdent";
 
 import read from "./";
-import { silenceLogsInBlock } from "@changesets/test-utils";
+import { silenceLogsInBlock } from "@motss-changesets/test-utils";
 
 const f = fixtures(__dirname);
 

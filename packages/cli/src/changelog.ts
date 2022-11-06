@@ -1,1 +1,1 @@
-export { default } from "@changesets/changelog-git";
+export { default } from "@motss-changesets/changelog-git";

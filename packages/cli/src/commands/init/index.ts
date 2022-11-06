@@ -2,10 +2,10 @@ import path from "path";
 import fs from "fs-extra";
 import chalk from "chalk";
 
-import { defaultWrittenConfig } from "@changesets/config";
-import { info, log, warn, error } from "@changesets/logger";
+import { defaultWrittenConfig } from "@motss-changesets/config";
+import { info, log, warn, error } from "@motss-changesets/logger";
 
-const pkgPath = path.dirname(require.resolve("@changesets/cli/package.json"));
+const pkgPath = path.dirname(require.resolve("@motss-changesets/cli/package.json"));
 
 // Modify base branch to "main" without changing defaultWrittenConfig since it also serves as a fallback
 // for config files that don't specify a base branch. Changing that to main would be a breaking change.

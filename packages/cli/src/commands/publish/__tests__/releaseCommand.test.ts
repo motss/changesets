@@ -1,13 +1,13 @@
 import fixtures from "fixturez";
 
 import publishPackages from "../publishPackages";
-import * as git from "@changesets/git";
-import { defaultConfig } from "@changesets/config";
-import { silenceLogsInBlock } from "@changesets/test-utils";
+import * as git from "@motss-changesets/git";
+import { defaultConfig } from "@motss-changesets/config";
+import { silenceLogsInBlock } from "@motss-changesets/test-utils";
 import runRelease from "..";
 
 jest.mock("../../../utils/cli-utilities");
-jest.mock("@changesets/git");
+jest.mock("@motss-changesets/git");
 jest.mock("../publishPackages");
 
 const f = fixtures(__dirname);

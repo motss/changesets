@@ -8,13 +8,13 @@
   "repository": "https://github.com/changesets/changesets/tree/main/packages/write",
   "dependencies": {
     "@babel/runtime": "^7.10.4",
-    "@changesets/types": "^5.2.0",
+    "@motss-changesets/types": "^5.2.0",
     "fs-extra": "^7.0.1",
     "human-id": "^1.0.2",
     "prettier": "^2.7.1"
   },
   "devDependencies": {
-    "@changesets/parse": "*",
+    "@motss-changesets/parse": "*",
     "fixturez": "^1.1.0"
   }
 }

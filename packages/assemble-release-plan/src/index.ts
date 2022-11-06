@@ -4,16 +4,16 @@ import {
   NewChangeset,
   PreState,
   PackageGroup,
-} from "@changesets/types";
+} from "@motss-changesets/types";
 import determineDependents from "./determine-dependents";
 import flattenReleases from "./flatten-releases";
 import matchFixedConstraint from "./match-fixed-constraint";
 import applyLinks from "./apply-links";
 import { incrementVersion } from "./increment";
 import * as semver from "semver";
-import { InternalError } from "@changesets/errors";
+import { InternalError } from "@motss-changesets/errors";
 import { Packages, Package } from "@manypkg/get-packages";
-import { getDependentsGraph } from "@changesets/get-dependents-graph";
+import { getDependentsGraph } from "@motss-changesets/get-dependents-graph";
 import { PreInfo, InternalRelease } from "./types";
 
 type SnapshotReleaseParameters = {

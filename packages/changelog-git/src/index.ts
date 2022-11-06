@@ -3,7 +3,7 @@ import {
   VersionType,
   ChangelogFunctions,
   ModCompWithPackage,
-} from "@changesets/types";
+} from "@motss-changesets/types";
 
 const getReleaseLine = async (
   changeset: NewChangesetWithCommit,

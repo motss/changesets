@@ -1,8 +1,8 @@
 import fixtures from "fixturez";
 import fs from "fs-extra";
 import path from "path";
-import { defaultWrittenConfig } from "@changesets/config";
-import { silenceLogsInBlock } from "@changesets/test-utils";
+import { defaultWrittenConfig } from "@motss-changesets/config";
+import { silenceLogsInBlock } from "@motss-changesets/test-utils";
 
 import initializeCommand from "..";
 

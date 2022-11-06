@@ -1,4 +1,4 @@
-import * as git from "@changesets/git";
+import * as git from "@motss-changesets/git";
 import { Package, Tool } from "@manypkg/get-packages";
 import { PublishedResult } from "./publishPackages";
 

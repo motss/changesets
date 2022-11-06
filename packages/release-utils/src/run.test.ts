@@ -1,7 +1,7 @@
-import { add, commit } from "@changesets/git";
-import { silenceLogsInBlock } from "@changesets/test-utils";
-import { Changeset } from "@changesets/types";
-import writeChangeset from "@changesets/write";
+import { add, commit } from "@motss-changesets/git";
+import { silenceLogsInBlock } from "@motss-changesets/test-utils";
+import { Changeset } from "@motss-changesets/types";
+import writeChangeset from "@motss-changesets/write";
 import fileUrl from "file-url";
 import fixturez from "fixturez";
 import fs from "fs-extra";

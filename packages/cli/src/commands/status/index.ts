@@ -3,15 +3,15 @@ import table from "tty-table";
 import fs from "fs-extra";
 import path from "path";
 
-import * as git from "@changesets/git";
-import getReleasePlan from "@changesets/get-release-plan";
-import { error, log, info, warn } from "@changesets/logger";
+import * as git from "@motss-changesets/git";
+import getReleasePlan from "@motss-changesets/get-release-plan";
+import { error, log, info, warn } from "@motss-changesets/logger";
 import {
   VersionType,
   Release,
   ComprehensiveRelease,
   Config,
-} from "@changesets/types";
+} from "@motss-changesets/types";
 
 export default async function getStatus(
   cwd: string,
