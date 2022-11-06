@@ -250,6 +250,18 @@ export async function getInfoFromPullRequest(request: {
 
   let commit = data?.mergeCommit;
 
+  console.debug(
+    "getInfoFromPullRequest",
+    JSON.stringify(
+      {
+        data,
+        request,
+      },
+      null,
+      2
+    )
+  );
+
   return {
     user: user ? user.login : null,
     commit: commit ? commit.abbreviatedOid : null,
