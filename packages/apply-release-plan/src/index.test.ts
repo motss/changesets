@@ -12,7 +12,7 @@ import outdent from "outdent";
 import spawn from "spawndamnit";
 import { defaultConfig } from "@motss-changesets/config";
 
-import applyReleasePlan from "./";
+import { applyReleasePlan } from "./";
 import { getPackages } from "@manypkg/get-packages";
 import { temporarilySilenceLogs } from "@motss-changesets/test-utils";
 

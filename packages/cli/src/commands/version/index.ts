@@ -3,7 +3,7 @@ import path from "path";
 import * as git from "@motss-changesets/git";
 import { log, warn, error } from "@motss-changesets/logger";
 import { Config } from "@motss-changesets/types";
-import applyReleasePlan from "@motss-changesets/apply-release-plan";
+import { applyReleasePlan } from "@motss-changesets/apply-release-plan";
 import { getChangesets } from "@motss-changesets/read";
 import { assembleReleasePlan } from "@motss-changesets/assemble-release-plan";
 import { getPackages } from "@manypkg/get-packages";

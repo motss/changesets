@@ -6,7 +6,7 @@ import {
   PackageGroup,
 } from "@motss-changesets/types";
 import determineDependents from "./determine-dependents";
-import flattenReleases from "./flatten-releases";
+import { flattenReleases } from "./flatten-releases";
 import matchFixedConstraint from "./match-fixed-constraint";
 import applyLinks from "./apply-links";
 import { incrementVersion } from "./increment";
@@ -238,6 +238,21 @@ export function assembleReleasePlan(
   // snapshot: { tag: "canary" }    ->  --snapshot canary
   snapshot?: SnapshotReleaseParameters | string | boolean
 ): ReleasePlan {
+  console.debug(
+    "assembleReleasePlan",
+    JSON.stringify(
+      {
+        changesets: changesets ?? null,
+        packages: packages ?? null,
+        config: config ?? null,
+        preState: preState ?? null,
+        snapshot: snapshot ?? null,
+      },
+      null,
+      2
+    )
+  );
+
   // TODO: remove `refined*` in the next major version of this package
   // just use `config` and `snapshot` parameters directly, typed as: `config: Config, snapshot?: SnapshotReleaseParameters`
   const refinedConfig: Config = config.snapshot

@@ -43,28 +43,19 @@ async function getCommitsThatAddChangesets(
   if (commits.every(stringDefined)) {
     // We have commits for all files
     return commits;
+  } else {
+    const missingCommitIds = commits
+      .map((commit, idx) => {
+        return {
+          commit,
+          id: paths[idx],
+        };
+      })
+      .filter((commit) => !commit.commit)
+      .map((commit) => commit.id);
+
+    throw new Error(`Missing commits: ${missingCommitIds}`);
   }
-
-  // Some files didn't exist. Try legacy filenames instead
-  const missingIds = changesetIds
-    .map((id, i) => (commits[i] ? undefined : id))
-    .filter(stringDefined);
-
-  const legacyPaths = missingIds.map((id) => `.changeset/${id}/changes.json`);
-  const commitsForLegacyPaths = await git.getCommitsThatAddFiles(
-    legacyPaths,
-    cwd
-  );
-
-  // Fill in the blanks in the array of commits
-  changesetIds.forEach((id, i) => {
-    if (!commits[i]) {
-      const missingIndex = missingIds.indexOf(id);
-      commits[i] = commitsForLegacyPaths[missingIndex];
-    }
-  });
-
-  return commits;
 }
 
 async function getNewChangelogEntry(
@@ -247,7 +238,7 @@ async function writeFormattedMarkdownFile(
   );
 }
 
-export default async function applyReleasePlan(
+export async function applyReleasePlan(
   releasePlan: ReleasePlan,
   packages: Packages,
   config: Config = defaultConfig,
