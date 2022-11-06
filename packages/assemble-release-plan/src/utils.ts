@@ -1,4 +1,4 @@
-import { PackageGroup, VersionType } from "@changesets/types";
+import { PackageGroup, VersionType } from "@motss-changesets/types";
 import { Package } from "@manypkg/get-packages";
 import semver from "semver";
 import { InternalRelease } from "./types";

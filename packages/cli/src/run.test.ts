@@ -1,10 +1,10 @@
 import fixtures from "fixturez";
-import { error } from "@changesets/logger";
+import { error } from "@motss-changesets/logger";
 
 import { run } from "./run";
 
 const f = fixtures(__dirname);
-jest.mock("@changesets/logger");
+jest.mock("@motss-changesets/logger");
 jest.mock("./commands/version");
 
 describe("cli", () => {

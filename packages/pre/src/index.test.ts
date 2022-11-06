@@ -2,11 +2,11 @@ import fixturez from "fixturez";
 import { enterPre, exitPre, readPreState } from "./index";
 import * as fs from "fs-extra";
 import path from "path";
-import { PreState } from "@changesets/types";
+import { PreState } from "@motss-changesets/types";
 import {
   PreEnterButInPreModeError,
   PreExitButNotInPreModeError,
-} from "@changesets/errors/src";
+} from "@motss-changesets/errors/src";
 
 let f = fixturez(__dirname);
 

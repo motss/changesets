@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Checkout Repo
         # https://github.com/actions/checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       # - name: Setup Node.js 12.x
       #   # https://github.com/actions/setup-node
@@ -24,15 +24,16 @@ jobs:
       #     node-version: 12.x
 
       - name: Install Dependencies
-        run: yarn
+        run: |
+          npm ci
 
       - name: Create Release Pull Request or Publish to npm
         # https://github.com/changesets/action
         uses: changesets/action@v1
         with:
           # this expects you to have a script called release which does a build for your packages and calls changeset publish
-          publish: yarn release
-          version: yarn version-packages
+          publish: npm run release
+          version: npm run version-packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

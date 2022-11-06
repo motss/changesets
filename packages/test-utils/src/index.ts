@@ -6,7 +6,7 @@
  * making this a require should be fine.
  */
 // eslint-disable-next-line import/no-commonjs
-const logger = require("@changesets/logger");
+const logger = require("@motss-changesets/logger");
 
 const createLogSilencer = () => {
   const originalLoggerError = logger.error;

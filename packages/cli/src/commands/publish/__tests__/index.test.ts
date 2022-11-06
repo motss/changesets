@@ -1,10 +1,10 @@
 import fixtures from "fixturez";
 import publishCommand from "../index";
-import { defaultConfig } from "@changesets/config";
+import { defaultConfig } from "@motss-changesets/config";
 import * as path from "path";
-import * as pre from "@changesets/pre";
-import { Config } from "@changesets/types";
-import { silenceLogsInBlock } from "@changesets/test-utils";
+import * as pre from "@motss-changesets/pre";
+import { Config } from "@motss-changesets/types";
+import { silenceLogsInBlock } from "@motss-changesets/test-utils";
 
 let changelogPath = path.resolve(__dirname, "../../changelog");
 let modifiedDefaultConfig: Config = {
@@ -16,7 +16,7 @@ const f = fixtures(__dirname);
 
 jest.mock("../npm-utils.ts");
 jest.mock("../publishPackages.ts");
-jest.mock("@changesets/pre");
+jest.mock("@motss-changesets/pre");
 
 describe("Publish command", () => {
   silenceLogsInBlock();

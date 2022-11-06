@@ -4,17 +4,17 @@ import {
   Config,
   NewChangeset,
   ComprehensiveRelease,
-} from "@changesets/types";
-import * as git from "@changesets/git";
+} from "@motss-changesets/types";
+import * as git from "@motss-changesets/git";
 import fs from "fs-extra";
 import path from "path";
 import outdent from "outdent";
 import spawn from "spawndamnit";
-import { defaultConfig } from "@changesets/config";
+import { defaultConfig } from "@motss-changesets/config";
 
 import applyReleasePlan from "./";
 import { getPackages } from "@manypkg/get-packages";
-import { temporarilySilenceLogs } from "@changesets/test-utils";
+import { temporarilySilenceLogs } from "@motss-changesets/test-utils";
 
 const f = fixtures(__dirname);
 

@@ -1,6 +1,6 @@
 import * as semver from "semver";
 import { InternalRelease, PreInfo } from "./types";
-import { InternalError } from "@changesets/errors";
+import { InternalError } from "@motss-changesets/errors";
 
 export function incrementVersion(
   release: InternalRelease,

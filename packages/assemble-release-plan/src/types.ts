@@ -1,4 +1,4 @@
-import { VersionType, PreState } from "@changesets/types";
+import { VersionType, PreState } from "@motss-changesets/types";
 
 export type InternalRelease = {
   name: string;

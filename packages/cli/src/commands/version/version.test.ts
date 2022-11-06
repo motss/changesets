@@ -2,12 +2,12 @@ import fixtures from "fixturez";
 
 import fs from "fs-extra";
 import path from "path";
-import * as git from "@changesets/git";
-import { warn } from "@changesets/logger";
-import { silenceLogsInBlock } from "@changesets/test-utils";
-import writeChangeset from "@changesets/write";
-import { NewChangeset, Config } from "@changesets/types";
-import { defaultConfig } from "@changesets/config";
+import * as git from "@motss-changesets/git";
+import { warn } from "@motss-changesets/logger";
+import { silenceLogsInBlock } from "@motss-changesets/test-utils";
+import writeChangeset from "@motss-changesets/write";
+import { NewChangeset, Config } from "@motss-changesets/types";
+import { defaultConfig } from "@motss-changesets/config";
 import { getPackages } from "@manypkg/get-packages";
 import pre from "../pre";
 import version from "./index";
@@ -62,9 +62,9 @@ let defaultOptions = {
 const consoleError = console.error;
 
 jest.mock("../../utils/cli-utilities");
-jest.mock("@changesets/git");
+jest.mock("@motss-changesets/git");
 jest.mock("human-id");
-jest.mock("@changesets/logger");
+jest.mock("@motss-changesets/logger");
 
 // @ts-ignore
 git.add.mockImplementation(() => Promise.resolve(true));

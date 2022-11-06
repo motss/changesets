@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": "https://github.com/changesets/changesets/tree/main/packages/parse",
   "dependencies": {
-    "@changesets/types": "^5.2.0",
+    "@motss-changesets/types": "^5.2.0",
     "js-yaml": "^3.13.1"
   },
   "devDependencies": {

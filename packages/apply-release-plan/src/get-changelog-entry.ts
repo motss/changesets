@@ -1,6 +1,9 @@
-import { ChangelogFunctions, NewChangesetWithCommit } from "@changesets/types";
+import {
+  ChangelogFunctions,
+  NewChangesetWithCommit,
+} from "@motss-changesets/types";
 
-import { ModCompWithPackage } from "@changesets/types";
+import { ModCompWithPackage } from "@motss-changesets/types";
 import startCase from "lodash.startcase";
 import { shouldUpdateDependencyBasedOnConfig } from "./utils";
 
