@@ -101,9 +101,15 @@ export async function getChangelogEntry(
     )
   );
 
+  /**
+   * NOTE: Workaround to fix release URL for non-monorepos.
+   */
+  const releaseName = release.name.includes("packages/")
+    ? `/${release.name}`
+    : "";
   const a = [
     // `## ${release.newVersion}`,
-    `## [${release.newVersion}](https://github.com/${changelogOpts.repo}/releases/tag/${release.name}/v${release.newVersion})`,
+    `## [${release.newVersion}](https://github.com/${changelogOpts.repo}/releases/tag/${releaseName}v${release.newVersion})`,
     await generateChangesForVersionTypeMarkdown(changelogLines, "major"),
     await generateChangesForVersionTypeMarkdown(changelogLines, "minor"),
     await generateChangesForVersionTypeMarkdown(changelogLines, "patch"),
