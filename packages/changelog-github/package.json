@@ -7,11 +7,11 @@
   "license": "MIT",
   "repository": "https://github.com/changesets/changesets/tree/main/packages/changelog-github",
   "dependencies": {
-    "@motss-changesets/get-github-info": "^0.5.5",
-    "@motss-changesets/types": "^5.2.4",
+    "@changesets/get-github-info": "^0.5.5",
+    "@changesets/types": "^5.2.4",
     "dotenv": "^8.1.0"
   },
   "devDependencies": {
-    "@motss-changesets/parse": "*"
+    "@changesets/parse": "*"
   }
 }
