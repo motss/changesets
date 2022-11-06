@@ -1,5 +1,12 @@
 # @changesets/cli
 
+## [2.27.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/cli@2.27.2)
+
+### Patch Changes
+
+- Updated dependencies [[`044c73d`](https://github.com/changesets/changesets/commit/044c73d6c8f6849201272641b4b36993dfa82f40)]:
+  - @motss-changesets/apply-release-plan@6.3.2
+
 ## [2.27.1](https://github.com/changesets/changesets/releases/tag/@motss-changesets/cli@2.27.1)
 
 ### Patch Changes
