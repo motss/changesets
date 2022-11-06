@@ -133,28 +133,27 @@ async function getNewChangelogEntry(
         changelog,
       };
     })
-  );
-  // .catch((e) => {
-  //   console.error(
-  //     "The following error was encountered while generating changelog entries"
-  //   );
-  //   console.error(
-  //     "We have escaped applying the changesets, and no files should have been affected"
-  //   );
-  //   throw e;
-  // });
+  ).catch((e) => {
+    console.error(
+      "The following error was encountered while generating changelog entries"
+    );
+    console.error(
+      "We have escaped applying the changesets, and no files should have been affected"
+    );
+    throw e;
+  });
 
-  console.debug(
-    "getNewChangelogEntry",
-    JSON.stringify(
-      {
-        commits,
-        moddedChangesets,
-      },
-      null,
-      2
-    )
-  );
+  // console.debug(
+  //   "getNewChangelogEntry",
+  //   JSON.stringify(
+  //     {
+  //       commits,
+  //       moddedChangesets,
+  //     },
+  //     null,
+  //     2
+  //   )
+  // );
 
   return a;
 }
@@ -276,19 +275,19 @@ export default async function applyReleasePlan(
     };
   });
 
-  console.debug(
-    "applyReleasePlan:1",
-    JSON.stringify(
-      {
-        releasePlan,
-        releasesWithPackage,
-        config,
-        snapshot,
-      },
-      null,
-      2
-    )
-  );
+  // console.debug(
+  //   "applyReleasePlan:1",
+  //   JSON.stringify(
+  //     {
+  //       releasePlan,
+  //       releasesWithPackage,
+  //       config,
+  //       snapshot,
+  //     },
+  //     null,
+  //     2
+  //   )
+  // );
 
   // I think this might be the wrong place to do this, but gotta do it somewhere -  add changelog entries to releases
   let releaseWithChangelogs = await getNewChangelogEntry(
@@ -298,16 +297,16 @@ export default async function applyReleasePlan(
     cwd
   );
 
-  console.debug(
-    "applyReleasePlan:2",
-    JSON.stringify(
-      {
-        releaseWithChangelogs,
-      },
-      null,
-      2
-    )
-  );
+  // console.debug(
+  //   "applyReleasePlan:2",
+  //   JSON.stringify(
+  //     {
+  //       releaseWithChangelogs,
+  //     },
+  //     null,
+  //     2
+  //   )
+  // );
 
   // // eslint-disable-next-line no-constant-condition
   // if (1) return [];

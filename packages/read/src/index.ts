@@ -37,7 +37,7 @@ export default async function getChangesets(
     throw err;
   }
 
-  console.debug(31, contents);
+  // console.debug(31, contents);
 
   // TODO: currently unused
   if (sinceRef !== undefined) {
@@ -56,7 +56,7 @@ export default async function getChangesets(
       !file.startsWith(".") && file.endsWith(".md") && file !== "README.md"
   );
 
-  console.debug(32, changesets);
+  // console.debug(32, changesets);
 
   const changesetContents = changesets.map(async (file) => {
     const changeset = await fs.readFile(

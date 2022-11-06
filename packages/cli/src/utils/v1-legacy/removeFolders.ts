@@ -8,16 +8,16 @@ import fs from "fs-extra";
 const removeEmptyFolders = async (folderPath: string) => {
   const dirContents = fs.readdirSync(folderPath);
 
-  console.debug(
-    "removeEmptyFolders",
-    JSON.stringify(
-      {
-        dirContents,
-      },
-      null,
-      2
-    )
-  );
+  // console.debug(
+  //   "removeEmptyFolders",
+  //   JSON.stringify(
+  //     {
+  //       dirContents,
+  //     },
+  //     null,
+  //     2
+  //   )
+  // );
 
   // // eslint-disable-next-line no-constant-condition
   // if (1) return [];

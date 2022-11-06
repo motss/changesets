@@ -111,19 +111,19 @@ export default async function getChangelogEntry(
     .filter((line) => line)
     .join("\n");
 
-  console.debug("generateChangesForVersionTypeMarkdown", {
-    release,
-    releases,
-    changesets,
-    changelogFuncs,
-    changelogOpts,
-    changelogLines: {
-      major: await Promise.all(changelogLines.major),
-      minor: await Promise.all(changelogLines.minor),
-      patch: await Promise.all(changelogLines.patch),
-    },
-    a,
-  });
+  // console.debug("generateChangesForVersionTypeMarkdown", {
+  //   release,
+  //   releases,
+  //   changesets,
+  //   changelogFuncs,
+  //   changelogOpts,
+  //   changelogLines: {
+  //     major: await Promise.all(changelogLines.major),
+  //     minor: await Promise.all(changelogLines.minor),
+  //     patch: await Promise.all(changelogLines.patch),
+  //   },
+  //   a,
+  // });
 
   return a;
 }
