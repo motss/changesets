@@ -103,17 +103,17 @@ const changelogFunctions: ChangelogFunctions = {
       };
     })();
 
-    // console.debug(
-    //   "getReleaseLine",
-    //   JSON.stringify(
-    //     {
-    //       changeset,
-    //       links,
-    //     },
-    //     null,
-    //     2
-    //   )
-    // );
+    console.debug(
+      "getReleaseLine",
+      JSON.stringify(
+        {
+          changeset,
+          links,
+        },
+        null,
+        2
+      )
+    );
 
     const users = usersFromSummary.length
       ? usersFromSummary
