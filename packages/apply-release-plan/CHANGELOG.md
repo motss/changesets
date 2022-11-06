@@ -1,5 +1,12 @@
 # @changesets/apply-release-plan
 
+## [6.3.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/apply-release-plan@6.3.2)
+
+### Patch Changes
+
+- fix: single release url fix
+  ([`044c73d`](https://github.com/changesets/changesets/commit/044c73d6c8f6849201272641b4b36993dfa82f40)) ([@motss](https://github.com/motss))
+
 ## [6.3.1](https://github.com/changesets/changesets/releases/tag/@motss-changesets/apply-release-plan@6.3.1)
 
 ### Patch Changes
