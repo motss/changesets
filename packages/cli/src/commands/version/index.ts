@@ -29,7 +29,8 @@ export default async function version(
   },
   config: Config
 ) {
-  console.debug(1);
+  console.debug("version");
+
   const releaseConfig = {
     ...config,
     // Disable committing when in snapshot mode
@@ -41,17 +42,17 @@ export default async function version(
     // removeEmptyFolders(path.resolve(cwd, ".changeset")),
   ]);
 
-  console.debug(
-    2,
-    JSON.stringify(
-      {
-        changesets,
-        preState,
-      },
-      null,
-      2
-    )
-  );
+  // console.debug(
+  //   2,
+  //   JSON.stringify(
+  //     {
+  //       changesets,
+  //       preState,
+  //     },
+  //     null,
+  //     2
+  //   )
+  // );
 
   if (preState?.mode === "pre") {
     warn(importantSeparator);
@@ -96,18 +97,18 @@ export default async function version(
       : undefined
   );
 
-  console.debug(
-    22,
-    JSON.stringify(
-      {
-        releasePlan,
-        releaseConfig,
-        options,
-      },
-      null,
-      2
-    )
-  );
+  // console.debug(
+  //   22,
+  //   JSON.stringify(
+  //     {
+  //       releasePlan,
+  //       releaseConfig,
+  //       options,
+  //     },
+  //     null,
+  //     2
+  //   )
+  // );
 
   let [...touchedFiles] = await applyReleasePlan(
     releasePlan,
@@ -116,16 +117,16 @@ export default async function version(
     options.snapshot
   );
 
-  console.debug(
-    23,
-    JSON.stringify(
-      {
-        touchedFiles,
-      },
-      null,
-      2
-    )
-  );
+  // console.debug(
+  //   23,
+  //   JSON.stringify(
+  //     {
+  //       touchedFiles,
+  //     },
+  //     null,
+  //     2
+  //   )
+  // );
 
   // // eslint-disable-next-line no-constant-condition
   // if (1) return;
@@ -136,7 +137,7 @@ export default async function version(
     cwd
   );
 
-  console.debug(24, { getVersionMessage });
+  // console.debug(24, { getVersionMessage });
 
   if (getVersionMessage) {
     let touchedFile: string | undefined;
