@@ -1,5 +1,5 @@
 {
-  "name": "@changesets/write",
+  "name": "@motss-changesets/write",
   "version": "0.2.2",
   "description": "Writes a changeset to a file",
   "main": "dist/write.cjs.js",

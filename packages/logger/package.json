@@ -1,5 +1,5 @@
 {
-  "name": "@changesets/logger",
+  "name": "@motss-changesets/logger",
   "version": "0.0.5",
   "description": "Console log alias",
   "main": "dist/logger.cjs.js",

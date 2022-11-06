@@ -1,5 +1,5 @@
 {
-  "name": "@changesets/test-utils",
+  "name": "@motss-changesets/test-utils",
   "version": "0.0.5",
   "description": "Utils for testing changesets packages",
   "main": "dist/test-utils.cjs.js",

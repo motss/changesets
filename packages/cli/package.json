@@ -1,5 +1,5 @@
 {
-  "name": "@changesets/cli",
+  "name": "@motss-changesets/cli",
   "version": "2.25.2",
   "description": "Organise your package versioning and publishing to make both contributors and maintainers happy",
   "bin": {

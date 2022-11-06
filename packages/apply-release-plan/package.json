@@ -1,5 +1,5 @@
 {
-  "name": "@changesets/apply-release-plan",
+  "name": "@motss-changesets/apply-release-plan",
   "version": "6.1.2",
   "description": "Takes a release plan and applies it to packages",
   "main": "dist/apply-release-plan.cjs.js",

@@ -1,5 +1,5 @@
 {
-  "name": "@changesets/read",
+  "name": "@motss-changesets/read",
   "version": "0.5.8",
   "description": "Read changesets from disc, and return the information as JSON",
   "main": "dist/read.cjs.js",

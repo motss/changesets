@@ -1,5 +1,5 @@
 {
-  "name": "@changesets/release-utils",
+  "name": "@motss-changesets/release-utils",
   "version": "0.1.11",
   "main": "dist/release-utils.cjs.js",
   "dependencies": {
