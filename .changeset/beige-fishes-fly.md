@@ -1,9 +1,9 @@
 ---
-"@changesets/apply-release-plan": minor
-"@changesets/changelog-github": minor
-"@changesets/cli": minor
-"@changesets/git": minor
-"@changesets/read": minor
+"@motss-changesets/apply-release-plan": minor
+"@mots-changesets/changelog-github": minor
+"@motss-changesets/cli": minor
+"@motss-changesets/git": minor
+"@motss-changesets/read": minor
 ---
 
 feat: opinionated customizations
