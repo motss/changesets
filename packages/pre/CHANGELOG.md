@@ -1,5 +1,16 @@
 # @changesets/pre
 
+## [1.1.1](https://github.com/changesets/changesets/releases/tag/@motss-changesets/pre@1.1.1)
+
+### Patch Changes
+
+- fix: release url fix
+  ([`d2c5de8`](https://github.com/changesets/changesets/commit/d2c5de8db955350e898939b3af782d8680c78b1f)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`d2c5de8`](https://github.com/changesets/changesets/commit/d2c5de8db955350e898939b3af782d8680c78b1f)]:
+  - @motss-changesets/errors@0.1.8
+  - @motss-changesets/types@5.2.4
+
 ## [1.1.0](https://github.com/changesets/changesets/releases/tag//@motss-changesets/prev1.1.0)
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
   "name": "@motss-changesets/get-version-range-type",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "Common get-version-range-type shared between changeset packages",
   "main": "dist/get-version-range-type.cjs.js",
   "module": "dist/get-version-range-type.esm.js",

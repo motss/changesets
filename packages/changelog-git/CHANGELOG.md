@@ -1,5 +1,15 @@
 # @changesets/changelog-git
 
+## [0.1.17](https://github.com/changesets/changesets/releases/tag/@motss-changesets/changelog-git@0.1.17)
+
+### Patch Changes
+
+- fix: release url fix
+  ([`d2c5de8`](https://github.com/changesets/changesets/commit/d2c5de8db955350e898939b3af782d8680c78b1f)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`d2c5de8`](https://github.com/changesets/changesets/commit/d2c5de8db955350e898939b3af782d8680c78b1f)]:
+  - @motss-changesets/types@5.2.4
+
 ## [0.1.16](https://github.com/changesets/changesets/releases/tag/@motss-changesets/changelog-git/v0.1.16)
 
 ### Patch Changes

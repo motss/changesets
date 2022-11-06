@@ -1,5 +1,27 @@
 # @changesets/cli
 
+## [2.27.1](https://github.com/changesets/changesets/releases/tag/@motss-changesets/cli@2.27.1)
+
+### Patch Changes
+
+- fix: release url fix
+  ([`d2c5de8`](https://github.com/changesets/changesets/commit/d2c5de8db955350e898939b3af782d8680c78b1f)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`d2c5de8`](https://github.com/changesets/changesets/commit/d2c5de8db955350e898939b3af782d8680c78b1f)]:
+  - @motss-changesets/apply-release-plan@6.3.1
+  - @motss-changesets/assemble-release-plan@5.3.1
+  - @motss-changesets/changelog-git@0.1.17
+  - @motss-changesets/config@2.2.4
+  - @motss-changesets/errors@0.1.8
+  - @motss-changesets/get-dependents-graph@1.3.8
+  - @motss-changesets/get-release-plan@3.0.20
+  - @motss-changesets/git@1.6.3
+  - @motss-changesets/logger@0.0.9
+  - @motss-changesets/pre@1.1.1
+  - @motss-changesets/read@0.7.1
+  - @motss-changesets/types@5.2.4
+  - @motss-changesets/write@0.2.6
+
 ## [2.27.0](https://github.com/changesets/changesets/releases/tag//@motss-changesets/cliv2.27.0)
 
 ### Minor Changes

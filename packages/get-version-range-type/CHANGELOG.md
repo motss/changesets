@@ -1,5 +1,12 @@
 # @changesets/get-version-range-type
 
+## [0.3.6](https://github.com/changesets/changesets/releases/tag/@motss-changesets/get-version-range-type@0.3.6)
+
+### Patch Changes
+
+- fix: release url fix
+  ([`d2c5de8`](https://github.com/changesets/changesets/commit/d2c5de8db955350e898939b3af782d8680c78b1f)) ([@motss](https://github.com/motss))
+
 ## [0.3.5](https://github.com/changesets/changesets/releases/tag/@motss-changesets/get-version-range-type/v0.3.5)
 
 ### Patch Changes

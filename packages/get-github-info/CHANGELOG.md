@@ -1,5 +1,12 @@
 # @changesets/get-github-info
 
+## [0.5.5](https://github.com/changesets/changesets/releases/tag/@motss-changesets/get-github-info@0.5.5)
+
+### Patch Changes
+
+- fix: release url fix
+  ([`d2c5de8`](https://github.com/changesets/changesets/commit/d2c5de8db955350e898939b3af782d8680c78b1f)) ([@motss](https://github.com/motss))
+
 ## [0.5.4](https://github.com/changesets/changesets/releases/tag/@motss-changesets/get-github-info/v0.5.4)
 
 ### Patch Changes
