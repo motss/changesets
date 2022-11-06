@@ -104,7 +104,7 @@ export async function getChangelogEntry(
   /**
    * NOTE: Workaround to fix release URL for non-monorepos.
    */
-  const releaseName = release.name.includes("packages/")
+  const releaseName = release.dir.includes("packages/")
     ? `/${release.name}`
     : "";
   const a = [
