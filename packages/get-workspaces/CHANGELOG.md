@@ -1,5 +1,15 @@
 # get-workspaces
 
+## [1.0.10](https://github.com/changesets/changesets/releases/tag/get-workspaces/v1.0.10)
+
+### Patch Changes
+
+- chore: rename all scope in dependencies
+  ([`c1a4420`](https://github.com/changesets/changesets/commit/c1a442099d818aa3f35e7a287c28b3e399994a83)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`7c7b8db`](https://github.com/changesets/changesets/commit/7c7b8db69744cdb74689d46b00994f983a566d72)]:
+  - @motss-changesets/types@5.2.1
+
 ## 1.0.9
 
 ### Patch Changes

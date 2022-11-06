@@ -1,5 +1,12 @@
 # @changesets/get-github-info
 
+## [0.5.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/get-github-info/v0.5.2)
+
+### Patch Changes
+
+- chore: rename scope and update release yaml
+  ([`7c7b8db`](https://github.com/changesets/changesets/commit/7c7b8db69744cdb74689d46b00994f983a566d72)) ([@motss](https://github.com/motss))
+
 ## 0.5.1
 
 ### Patch Changes

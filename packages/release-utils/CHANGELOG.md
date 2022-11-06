@@ -1,5 +1,20 @@
 # @changesets/release-utils
 
+## [0.1.12](https://github.com/changesets/changesets/releases/tag/@motss-changesets/release-utils/v0.1.12)
+
+### Patch Changes
+
+- chore: rename all scope in dependencies
+  ([`c1a4420`](https://github.com/changesets/changesets/commit/c1a442099d818aa3f35e7a287c28b3e399994a83)) ([@motss](https://github.com/motss))
+
+- chore: rename scope and update release yaml
+  ([`7c7b8db`](https://github.com/changesets/changesets/commit/7c7b8db69744cdb74689d46b00994f983a566d72)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`61244d0`](https://github.com/changesets/changesets/commit/61244d0614a33d8118d156e013cd5f5827fab83e), [`c1a4420`](https://github.com/changesets/changesets/commit/c1a442099d818aa3f35e7a287c28b3e399994a83), [`89a86b9`](https://github.com/changesets/changesets/commit/89a86b93b1ed6f1456bc7979e6a6c48f012e19f1), [`7c7b8db`](https://github.com/changesets/changesets/commit/7c7b8db69744cdb74689d46b00994f983a566d72)]:
+  - @motss-changesets/read@0.6.0
+  - @motss-changesets/pre@1.0.14
+  - @motss-changesets/types@5.2.1
+
 ## 0.1.11
 
 ### Patch Changes

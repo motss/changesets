@@ -1,6 +1,6 @@
 {
   "name": "@motss-changesets/errors",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Error classes for @changesets",
   "main": "dist/errors.cjs.js",
   "module": "dist/errors.esm.js",
