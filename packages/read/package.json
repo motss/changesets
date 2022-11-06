@@ -1,6 +1,6 @@
 {
   "name": "@motss-changesets/read",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Read changesets from disc, and return the information as JSON",
   "main": "dist/read.cjs.js",
   "module": "dist/read.esm.js",
@@ -8,10 +8,10 @@
   "repository": "https://github.com/changesets/changesets/tree/main/packages/read",
   "dependencies": {
     "@babel/runtime": "^7.10.4",
-    "@motss-changesets/git": "^1.6.2",
-    "@motss-changesets/logger": "^0.0.8",
-    "@motss-changesets/parse": "^0.4.0",
-    "@motss-changesets/types": "^5.2.3",
+    "@motss-changesets/git": "^1.6.3",
+    "@motss-changesets/logger": "^0.0.9",
+    "@motss-changesets/parse": "^0.4.1",
+    "@motss-changesets/types": "^5.2.4",
     "chalk": "^2.1.0",
     "fs-extra": "^7.0.1",
     "p-filter": "^2.1.0"

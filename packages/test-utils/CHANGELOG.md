@@ -1,5 +1,15 @@
 # @changesets/test-utils
 
+## [0.0.9](https://github.com/changesets/changesets/releases/tag/@motss-changesets/test-utils@0.0.9)
+
+### Patch Changes
+
+- fix: release url fix
+  ([`d2c5de8`](https://github.com/changesets/changesets/commit/d2c5de8db955350e898939b3af782d8680c78b1f)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`d2c5de8`](https://github.com/changesets/changesets/commit/d2c5de8db955350e898939b3af782d8680c78b1f)]:
+  - @motss-changesets/logger@0.0.9
+
 ## [0.0.8](https://github.com/changesets/changesets/releases/tag/@motss-changesets/test-utils/v0.0.8)
 
 ### Patch Changes

@@ -1,5 +1,19 @@
 # @changesets/get-release-plan
 
+## [3.0.20](https://github.com/changesets/changesets/releases/tag/@motss-changesets/get-release-plan@3.0.20)
+
+### Patch Changes
+
+- fix: release url fix
+  ([`d2c5de8`](https://github.com/changesets/changesets/commit/d2c5de8db955350e898939b3af782d8680c78b1f)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`d2c5de8`](https://github.com/changesets/changesets/commit/d2c5de8db955350e898939b3af782d8680c78b1f)]:
+  - @motss-changesets/assemble-release-plan@5.3.1
+  - @motss-changesets/config@2.2.4
+  - @motss-changesets/pre@1.1.1
+  - @motss-changesets/read@0.7.1
+  - @motss-changesets/types@5.2.4
+
 ## [3.0.19](https://github.com/changesets/changesets/releases/tag//@motss-changesets/get-release-planv3.0.19)
 
 ### Patch Changes

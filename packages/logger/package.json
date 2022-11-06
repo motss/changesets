@@ -1,6 +1,6 @@
 {
   "name": "@motss-changesets/logger",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Console log alias",
   "main": "dist/logger.cjs.js",
   "module": "dist/logger.esm.js",
