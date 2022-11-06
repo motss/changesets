@@ -1,7 +1,10 @@
 import { ChangelogFunctions } from "@motss-changesets/types";
 // @ts-ignore
 import { config } from "dotenv";
-import { getInfo, getInfoFromPullRequest } from "@motss-changesets/get-github-info";
+import {
+  getInfo,
+  getInfoFromPullRequest,
+} from "@motss-changesets/get-github-info";
 
 config();
 
@@ -112,11 +115,13 @@ const changelogFunctions: ChangelogFunctions = {
     const futureLines2 = futureLines.map((l) => `  ${l}`).join("\n");
     const a = [
       "\n\n",
-      `* ${firstLine}\n${futureLines2}`,
+      `* ${firstLine}\n${futureLines2.trimEnd()}`,
       links.pull ? ` (${links.pull})` : "",
       links.commit ? ` (${links.commit})` : "",
-      links.users ? ` (${users})` : "",
-    ].join("");
+      users ? ` (${users})` : "",
+    ]
+      .filter((n) => n)
+      .join("");
 
     // const prefix = [
     //   links.pull === null ? "" : ` ${links.pull}`,
