@@ -1,5 +1,17 @@
 # @changesets/apply-release-plan
 
+## [6.3.0](https://github.com/changesets/changesets/releases/tag//@motss-changesets/apply-release-planv6.3.0)
+
+### Minor Changes
+
+- refactor: refactor version
+  ([`36f014d`](https://github.com/changesets/changesets/commit/36f014defe54f0790a92a86542a9f7953de4e024)) ([@motss](https://github.com/motss))
+
+### Patch Changes
+
+- refactor: release name fix
+  ([`8b9b607`](https://github.com/changesets/changesets/commit/8b9b607430cefebe839504a29621f1b1daed6af0)) ([@motss](https://github.com/motss))
+
 ## [6.2.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/apply-release-plan/v6.2.2)
 
 ### Patch Changes
