@@ -1,5 +1,12 @@
 # @changesets/get-github-info
 
+## [0.5.3](https://github.com/changesets/changesets/releases/tag/@motss-changesets/get-github-info/v0.5.3)
+
+### Patch Changes
+
+- chore: bump all packages
+  ([`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)) ([@motss](https://github.com/motss))
+
 ## [0.5.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/get-github-info/v0.5.2)
 
 ### Patch Changes

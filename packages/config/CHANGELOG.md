@@ -1,5 +1,18 @@
 # @changesets/config
 
+## [2.2.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/config/v2.2.2)
+
+### Patch Changes
+
+- chore: bump all packages
+  ([`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)]:
+  - @motss-changesets/errors@0.1.6
+  - @motss-changesets/get-dependents-graph@1.3.6
+  - @motss-changesets/logger@0.0.7
+  - @motss-changesets/types@5.2.2
+
 ## [2.2.1](https://github.com/changesets/changesets/releases/tag/@motss-changesets/config/v2.2.1)
 
 ### Patch Changes

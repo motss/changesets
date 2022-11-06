@@ -1,5 +1,17 @@
 # @changesets/assemble-release-plan
 
+## [5.2.4](https://github.com/changesets/changesets/releases/tag/@motss-changesets/assemble-release-plan/v5.2.4)
+
+### Patch Changes
+
+- chore: bump all packages
+  ([`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)) ([@motss](https://github.com/motss))
+
+* Updated dependencies [[`691e8da`](https://github.com/changesets/changesets/commit/691e8dab60c1c56cc79cf5857259edeb4352f43a)]:
+  - @motss-changesets/errors@0.1.6
+  - @motss-changesets/get-dependents-graph@1.3.6
+  - @motss-changesets/types@5.2.2
+
 ## [5.2.3](https://github.com/changesets/changesets/releases/tag/@motss-changesets/assemble-release-plan/v5.2.3)
 
 ### Patch Changes
