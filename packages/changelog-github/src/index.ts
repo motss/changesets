@@ -1,7 +1,10 @@
 import { ChangelogFunctions } from "@motss-changesets/types";
 // @ts-ignore
 import { config } from "dotenv";
-import { getInfo, getInfoFromPullRequest } from "@motss-changesets/get-github-info";
+import {
+  getInfo,
+  getInfoFromPullRequest,
+} from "@motss-changesets/get-github-info";
 
 config();
 
@@ -109,14 +112,18 @@ const changelogFunctions: ChangelogFunctions = {
           .join(", ")
       : links.user;
 
+    const suffix = [
+      links.pull ? `(${links.pull})` : "",
+      links.commit ? `(${links.commit})` : "",
+      users ? `(${users})` : "",
+    ]
+      .filter((n) => n)
+      .join(" ");
     const futureLines2 = futureLines.map((l) => `  ${l}`).join("\n");
-    const a = [
-      "\n\n",
-      `* ${firstLine}\n${futureLines2}`,
-      links.pull ? ` (${links.pull})` : "",
-      links.commit ? ` (${links.commit})` : "",
-      links.users ? ` (${users})` : "",
-    ].join("");
+    const futureLines3 = suffix
+      ? `${futureLines2.trimEnd()} ${suffix}\n`
+      : futureLines2;
+    const a = ["\n\n", `* ${firstLine}\n${futureLines3}`].join("");
 
     // const prefix = [
     //   links.pull === null ? "" : ` ${links.pull}`,
