@@ -1,9 +1,8 @@
 import fs from "fs-extra";
 import path from "path";
-import parse from "@motss-changesets/parse";
+import { parseChangesetFile } from "@motss-changesets/parse";
 import { NewChangeset } from "@motss-changesets/types";
 import * as git from "@motss-changesets/git";
-import getOldChangesetsAndWarn from "./legacy";
 
 async function filterChangesetsSinceRef(
   changesets: Array<string>,
@@ -19,58 +18,50 @@ async function filterChangesetsSinceRef(
   return changesets.filter((dir) => newHashes.includes(dir));
 }
 
-export default async function getChangesets(
+export async function getChangesets(
   cwd: string,
   sinceRef?: string
 ): Promise<Array<NewChangeset>> {
-  let changesetBase = path.join(cwd, ".changeset");
-  let contents: string[];
-
   console.debug(3, sinceRef);
 
   try {
-    contents = await fs.readdir(changesetBase);
+    const changesetFolder = path.join(cwd, ".changeset");
+    const filesInChangesetFolder = await fs.readdir(changesetFolder);
+    const contents = await (sinceRef == null
+      ? filesInChangesetFolder
+      : filterChangesetsSinceRef(
+          filesInChangesetFolder,
+          changesetFolder,
+          sinceRef
+        ));
+
+    const changesetContentPromises = contents
+      .filter(
+        (file) =>
+          !file.startsWith(".") && file.endsWith(".md") && file !== "README.md"
+      )
+      .map(async (file) => {
+        const fileContent = await fs.readFile(
+          path.join(changesetFolder, file),
+          "utf-8"
+        );
+        const parsedContent = parseChangesetFile(fileContent);
+
+        return {
+          ...parsedContent,
+          id: file.replace(".md", ""),
+        };
+      });
+    const changesetContents = await Promise.all(changesetContentPromises);
+
+    return changesetContents;
   } catch (err) {
-    if ((err as any).code === "ENOENT") {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") {
       throw new Error("There is no .changeset directory in this project");
     }
+
     throw err;
   }
-
-  // console.debug(31, contents);
-
-  // TODO: currently unused
-  if (sinceRef !== undefined) {
-    contents = await filterChangesetsSinceRef(
-      contents,
-      changesetBase,
-      sinceRef
-    );
-  }
-
-  // TODO: currently unused
-  let oldChangesetsPromise = getOldChangesetsAndWarn(changesetBase, contents);
-
-  let changesets = contents.filter(
-    (file) =>
-      !file.startsWith(".") && file.endsWith(".md") && file !== "README.md"
-  );
-
-  // console.debug(32, changesets);
-
-  const changesetContents = changesets.map(async (file) => {
-    const changeset = await fs.readFile(
-      path.join(changesetBase, file),
-      "utf-8"
-    );
-
-    return { ...parse(changeset), id: file.replace(".md", "") };
-  });
-
-  const a = [
-    ...(await oldChangesetsPromise),
-    ...(await Promise.all(changesetContents)),
-  ];
-
-  return a;
 }
+
+export default getChangesets;

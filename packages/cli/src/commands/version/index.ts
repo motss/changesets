@@ -4,11 +4,10 @@ import * as git from "@motss-changesets/git";
 import { log, warn, error } from "@motss-changesets/logger";
 import { Config } from "@motss-changesets/types";
 import applyReleasePlan from "@motss-changesets/apply-release-plan";
-import readChangesets from "@motss-changesets/read";
-import assembleReleasePlan from "@motss-changesets/assemble-release-plan";
+import { getChangesets } from "@motss-changesets/read";
+import { assembleReleasePlan } from "@motss-changesets/assemble-release-plan";
 import { getPackages } from "@manypkg/get-packages";
 
-// import { removeEmptyFolders } from "../../utils/v1-legacy/removeFolders";
 import { readPreState } from "@motss-changesets/pre";
 import { ExitError } from "@motss-changesets/errors";
 import { getCommitFunctions } from "../../commit/getCommitFunctions";
@@ -37,9 +36,8 @@ export default async function version(
     commit: options.snapshot ? false : config.commit,
   };
   const [changesets, preState] = await Promise.all([
-    readChangesets(cwd),
+    getChangesets(cwd),
     readPreState(cwd),
-    // removeEmptyFolders(path.resolve(cwd, ".changeset")),
   ]);
 
   // console.debug(
@@ -75,10 +73,10 @@ export default async function version(
     (preState === undefined || preState.mode !== "exit")
   ) {
     warn("No unreleased changesets found, exiting.");
-    // return;
+    return;
   }
 
-  let packages = await getPackages(cwd);
+  const packages = await getPackages(cwd);
 
   // console.debug(21, packages);
 
@@ -137,7 +135,11 @@ export default async function version(
     cwd
   );
 
-  // console.debug(24, { getVersionMessage });
+  console.debug("version > getCommitFunctions", {
+    getVersionMessage,
+    commitOpts,
+    releaseConfig,
+  });
 
   if (getVersionMessage) {
     let touchedFile: string | undefined;

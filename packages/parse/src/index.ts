@@ -3,7 +3,7 @@ import { Release, VersionType } from "@motss-changesets/types";
 
 const mdRegex = /\s*---([^]*?)\n\s*---(\s*(?:\n|$)[^]*)/;
 
-export default function parseChangesetFile(contents: string): {
+export function parseChangesetFile(contents: string): {
   summary: string;
   releases: Release[];
 } {
@@ -40,3 +40,5 @@ export default function parseChangesetFile(contents: string): {
 
   return { releases, summary };
 }
+
+export default parseChangesetFile;

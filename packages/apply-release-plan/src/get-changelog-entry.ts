@@ -25,7 +25,7 @@ async function generateChangesForVersionTypeMarkdown(
 }
 
 // release is the package and version we are releasing
-export default async function getChangelogEntry(
+export async function getChangelogEntry(
   release: ModCompWithPackage,
   releases: ModCompWithPackage[],
   changesets: NewChangesetWithCommit[],
@@ -111,19 +111,29 @@ export default async function getChangelogEntry(
     .filter((line) => line)
     .join("\n");
 
-  // console.debug("generateChangesForVersionTypeMarkdown", {
-  //   release,
-  //   releases,
-  //   changesets,
-  //   changelogFuncs,
-  //   changelogOpts,
-  //   changelogLines: {
-  //     major: await Promise.all(changelogLines.major),
-  //     minor: await Promise.all(changelogLines.minor),
-  //     patch: await Promise.all(changelogLines.patch),
-  //   },
-  //   a,
-  // });
+  console.debug(
+    "getChangelogEntry",
+    JSON.stringify(
+      {
+        release,
+        releases,
+        changesets,
+        changelogOpts,
+        updateInternalDependencies,
+        onlyUpdatePeerDependentsWhenOutOfRange,
+        changelogLines: {
+          major: await Promise.all(changelogLines.major),
+          minor: await Promise.all(changelogLines.minor),
+          patch: await Promise.all(changelogLines.patch),
+        },
+        a,
+      },
+      null,
+      2
+    )
+  );
 
   return a;
 }
+
+export default getChangelogEntry;
