@@ -106,7 +106,7 @@ export async function getChangelogEntry(
    */
   const releaseName = release.dir.includes("packages/")
     ? `${release.name}@`
-    : "";
+    : "v";
   const a = [
     // `## ${release.newVersion}`,
     /**
