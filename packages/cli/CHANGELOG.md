@@ -1,5 +1,21 @@
 # @changesets/cli
 
+## [2.27.0](https://github.com/changesets/changesets/releases/tag//@motss-changesets/cliv2.27.0)
+
+### Minor Changes
+
+- refactor: refactor version
+  ([`36f014d`](https://github.com/changesets/changesets/commit/36f014defe54f0790a92a86542a9f7953de4e024)) ([@motss](https://github.com/motss))
+
+### Patch Changes
+
+- Updated dependencies [[`36f014d`](https://github.com/changesets/changesets/commit/36f014defe54f0790a92a86542a9f7953de4e024), [`8b9b607`](https://github.com/changesets/changesets/commit/8b9b607430cefebe839504a29621f1b1daed6af0)]:
+  - @motss-changesets/apply-release-plan@6.3.0
+  - @motss-changesets/assemble-release-plan@5.3.0
+  - @motss-changesets/pre@1.1.0
+  - @motss-changesets/read@0.7.0
+  - @motss-changesets/get-release-plan@3.0.19
+
 ## [2.26.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/cli/v2.26.2)
 
 ### Patch Changes

@@ -1,5 +1,17 @@
 # @changesets/read
 
+## [0.7.0](https://github.com/changesets/changesets/releases/tag//@motss-changesets/readv0.7.0)
+
+### Minor Changes
+
+- refactor: refactor version
+  ([`36f014d`](https://github.com/changesets/changesets/commit/36f014defe54f0790a92a86542a9f7953de4e024)) ([@motss](https://github.com/motss))
+
+### Patch Changes
+
+- Updated dependencies [[`36f014d`](https://github.com/changesets/changesets/commit/36f014defe54f0790a92a86542a9f7953de4e024)]:
+  - @motss-changesets/parse@0.4.0
+
 ## [0.6.2](https://github.com/changesets/changesets/releases/tag/@motss-changesets/read/v0.6.2)
 
 ### Patch Changes

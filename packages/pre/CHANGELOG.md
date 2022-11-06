@@ -1,5 +1,12 @@
 # @changesets/pre
 
+## [1.1.0](https://github.com/changesets/changesets/releases/tag//@motss-changesets/prev1.1.0)
+
+### Minor Changes
+
+- refactor: refactor version
+  ([`36f014d`](https://github.com/changesets/changesets/commit/36f014defe54f0790a92a86542a9f7953de4e024)) ([@motss](https://github.com/motss))
+
 ## [1.0.16](https://github.com/changesets/changesets/releases/tag/@motss-changesets/pre/v1.0.16)
 
 ### Patch Changes
