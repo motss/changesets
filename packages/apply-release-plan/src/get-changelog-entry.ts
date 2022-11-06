@@ -105,11 +105,14 @@ export async function getChangelogEntry(
    * NOTE: Workaround to fix release URL for non-monorepos.
    */
   const releaseName = release.dir.includes("packages/")
-    ? `/${release.name}`
+    ? `${release.name}@`
     : "";
   const a = [
     // `## ${release.newVersion}`,
-    `## [${release.newVersion}](https://github.com/${changelogOpts.repo}/releases/tag/${releaseName}v${release.newVersion})`,
+    /**
+     * FIXME: changelogOpts.repo points to changesets/changesets instead of current forked repo.
+     */
+    `## [${release.newVersion}](https://github.com/${changelogOpts.repo}/releases/tag/${releaseName}${release.newVersion})`,
     await generateChangesForVersionTypeMarkdown(changelogLines, "major"),
     await generateChangesForVersionTypeMarkdown(changelogLines, "minor"),
     await generateChangesForVersionTypeMarkdown(changelogLines, "patch"),
