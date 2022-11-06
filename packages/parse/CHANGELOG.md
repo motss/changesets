@@ -1,5 +1,12 @@
 # @changesets/parse
 
+## [0.4.0](https://github.com/changesets/changesets/releases/tag//@motss-changesets/parsev0.4.0)
+
+### Minor Changes
+
+- refactor: refactor version
+  ([`36f014d`](https://github.com/changesets/changesets/commit/36f014defe54f0790a92a86542a9f7953de4e024)) ([@motss](https://github.com/motss))
+
 ## [0.3.18](https://github.com/changesets/changesets/releases/tag/@motss-changesets/parse/v0.3.18)
 
 ### Patch Changes

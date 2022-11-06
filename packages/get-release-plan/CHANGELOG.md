@@ -1,5 +1,14 @@
 # @changesets/get-release-plan
 
+## [3.0.19](https://github.com/changesets/changesets/releases/tag//@motss-changesets/get-release-planv3.0.19)
+
+### Patch Changes
+
+- Updated dependencies [[`36f014d`](https://github.com/changesets/changesets/commit/36f014defe54f0790a92a86542a9f7953de4e024)]:
+  - @motss-changesets/assemble-release-plan@5.3.0
+  - @motss-changesets/pre@1.1.0
+  - @motss-changesets/read@0.7.0
+
 ## [3.0.18](https://github.com/changesets/changesets/releases/tag/@motss-changesets/get-release-plan/v3.0.18)
 
 ### Patch Changes

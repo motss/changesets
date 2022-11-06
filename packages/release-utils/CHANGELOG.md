@@ -1,5 +1,13 @@
 # @changesets/release-utils
 
+## [0.1.15](https://github.com/changesets/changesets/releases/tag//@motss-changesets/release-utilsv0.1.15)
+
+### Patch Changes
+
+- Updated dependencies [[`36f014d`](https://github.com/changesets/changesets/commit/36f014defe54f0790a92a86542a9f7953de4e024)]:
+  - @motss-changesets/pre@1.1.0
+  - @motss-changesets/read@0.7.0
+
 ## [0.1.14](https://github.com/changesets/changesets/releases/tag/@motss-changesets/release-utils/v0.1.14)
 
 ### Patch Changes
