@@ -8,25 +8,26 @@ import {
 } from "@motss-changesets/errors";
 
 export async function readPreState(cwd: string): Promise<PreState | undefined> {
-  let preStatePath = path.resolve(cwd, ".changeset", "pre.json");
-  // TODO: verify that the pre state isn't broken
-  let preState: PreState | undefined;
+  const preStatePath = path.resolve(cwd, ".changeset", "pre.json");
+
   try {
-    let contents = await fs.readFile(preStatePath, "utf8");
     try {
-      preState = JSON.parse(contents);
+      const contents = await fs.readFile(preStatePath, "utf8");
+      const preState = JSON.parse(contents);
+
+      return preState;
     } catch (err) {
       if (err instanceof SyntaxError) {
-        console.error("error parsing json:", contents);
+        console.error(`Unable to parse JSON from '${preStatePath}.'`);
       }
+
       throw err;
     }
   } catch (err) {
-    if ((err as any).code !== "ENOENT") {
+    if ((err as NodeJS.ErrnoException).code !== "ENOENT") {
       throw err;
     }
   }
-  return preState;
 }
 
 export async function exitPre(cwd: string) {

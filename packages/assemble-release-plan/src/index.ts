@@ -119,13 +119,121 @@ function getNewVersion(
 
 type OptionalProp<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>;
 
-function assembleReleasePlan(
+function getRelevantChangesets(
+  changesets: NewChangeset[],
+  ignored: Readonly<string[]>,
+  preState: PreState | undefined
+): NewChangeset[] {
+  for (const changeset of changesets) {
+    // Using the following 2 arrays to decide whether a changeset
+    // contains both ignored and not ignored packages
+    const ignoredPackages = [];
+    const notIgnoredPackages = [];
+    for (const release of changeset.releases) {
+      if (
+        ignored.find(
+          (ignoredPackageName) => ignoredPackageName === release.name
+        )
+      ) {
+        ignoredPackages.push(release.name);
+      } else {
+        notIgnoredPackages.push(release.name);
+      }
+    }
+
+    if (ignoredPackages.length > 0 && notIgnoredPackages.length > 0) {
+      throw new Error(
+        `Found mixed changeset ${changeset.id}\n` +
+          `Found ignored packages: ${ignoredPackages.join(" ")}\n` +
+          `Found not ignored packages: ${notIgnoredPackages.join(" ")}\n` +
+          "Mixed changesets that contain both ignored and not ignored packages are not allowed"
+      );
+    }
+  }
+
+  if (preState && preState.mode !== "exit") {
+    let usedChangesetIds = new Set(preState.changesets);
+    return changesets.filter(
+      (changeset) => !usedChangesetIds.has(changeset.id)
+    );
+  }
+
+  return changesets;
+}
+
+function getHighestPreVersion(
+  packageGroup: PackageGroup,
+  packagesByName: Map<string, Package>
+): number {
+  let highestPreVersion = 0;
+  for (let pkg of packageGroup) {
+    highestPreVersion = Math.max(
+      getPreVersion(packagesByName.get(pkg)!.packageJson.version),
+      highestPreVersion
+    );
+  }
+  return highestPreVersion;
+}
+
+function getPreInfo(
+  changesets: NewChangeset[],
+  packagesByName: Map<string, Package>,
+  config: Config,
+  preState: PreState | undefined
+): PreInfo | undefined {
+  if (preState === undefined) {
+    return;
+  }
+
+  let updatedPreState = {
+    ...preState,
+    changesets: changesets.map((changeset) => changeset.id),
+    initialVersions: {
+      ...preState.initialVersions,
+    },
+  };
+
+  for (const [, pkg] of packagesByName) {
+    if (updatedPreState.initialVersions[pkg.packageJson.name] === undefined) {
+      updatedPreState.initialVersions[pkg.packageJson.name] =
+        pkg.packageJson.version;
+    }
+  }
+  // Populate preVersion
+  // preVersion is the map between package name and its next pre version number.
+  let preVersions = new Map<string, number>();
+  for (const [, pkg] of packagesByName) {
+    preVersions.set(
+      pkg.packageJson.name,
+      getPreVersion(pkg.packageJson.version)
+    );
+  }
+  for (let fixedGroup of config.fixed) {
+    let highestPreVersion = getHighestPreVersion(fixedGroup, packagesByName);
+    for (let fixedPackage of fixedGroup) {
+      preVersions.set(fixedPackage, highestPreVersion);
+    }
+  }
+  for (let linkedGroup of config.linked) {
+    let highestPreVersion = getHighestPreVersion(linkedGroup, packagesByName);
+    for (let linkedPackage of linkedGroup) {
+      preVersions.set(linkedPackage, highestPreVersion);
+    }
+  }
+
+  return {
+    state: updatedPreState,
+    preVersions,
+  };
+}
+
+export function assembleReleasePlan(
   changesets: NewChangeset[],
   packages: Packages,
   config: OptionalProp<Config, "snapshot">,
   // intentionally not using an optional parameter here so the result of `readPreState` has to be passed in here
   preState: PreState | undefined,
-  // snapshot: undefined            ->  not using snaphot
+  // snapshot: undefined            ->  not using snapshot
   // snapshot: { tag: undefined }   ->  --snapshot (empty tag)
   // snapshot: { tag: "canary" }    ->  --snapshot canary
   snapshot?: SnapshotReleaseParameters | string | boolean
@@ -256,114 +364,6 @@ function assembleReleasePlan(
       };
     }),
     preState: preInfo?.state,
-  };
-}
-
-function getRelevantChangesets(
-  changesets: NewChangeset[],
-  ignored: Readonly<string[]>,
-  preState: PreState | undefined
-): NewChangeset[] {
-  for (const changeset of changesets) {
-    // Using the following 2 arrays to decide whether a changeset
-    // contains both ignored and not ignored packages
-    const ignoredPackages = [];
-    const notIgnoredPackages = [];
-    for (const release of changeset.releases) {
-      if (
-        ignored.find(
-          (ignoredPackageName) => ignoredPackageName === release.name
-        )
-      ) {
-        ignoredPackages.push(release.name);
-      } else {
-        notIgnoredPackages.push(release.name);
-      }
-    }
-
-    if (ignoredPackages.length > 0 && notIgnoredPackages.length > 0) {
-      throw new Error(
-        `Found mixed changeset ${changeset.id}\n` +
-          `Found ignored packages: ${ignoredPackages.join(" ")}\n` +
-          `Found not ignored packages: ${notIgnoredPackages.join(" ")}\n` +
-          "Mixed changesets that contain both ignored and not ignored packages are not allowed"
-      );
-    }
-  }
-
-  if (preState && preState.mode !== "exit") {
-    let usedChangesetIds = new Set(preState.changesets);
-    return changesets.filter(
-      (changeset) => !usedChangesetIds.has(changeset.id)
-    );
-  }
-
-  return changesets;
-}
-
-function getHighestPreVersion(
-  packageGroup: PackageGroup,
-  packagesByName: Map<string, Package>
-): number {
-  let highestPreVersion = 0;
-  for (let pkg of packageGroup) {
-    highestPreVersion = Math.max(
-      getPreVersion(packagesByName.get(pkg)!.packageJson.version),
-      highestPreVersion
-    );
-  }
-  return highestPreVersion;
-}
-
-function getPreInfo(
-  changesets: NewChangeset[],
-  packagesByName: Map<string, Package>,
-  config: Config,
-  preState: PreState | undefined
-): PreInfo | undefined {
-  if (preState === undefined) {
-    return;
-  }
-
-  let updatedPreState = {
-    ...preState,
-    changesets: changesets.map((changeset) => changeset.id),
-    initialVersions: {
-      ...preState.initialVersions,
-    },
-  };
-
-  for (const [, pkg] of packagesByName) {
-    if (updatedPreState.initialVersions[pkg.packageJson.name] === undefined) {
-      updatedPreState.initialVersions[pkg.packageJson.name] =
-        pkg.packageJson.version;
-    }
-  }
-  // Populate preVersion
-  // preVersion is the map between package name and its next pre version number.
-  let preVersions = new Map<string, number>();
-  for (const [, pkg] of packagesByName) {
-    preVersions.set(
-      pkg.packageJson.name,
-      getPreVersion(pkg.packageJson.version)
-    );
-  }
-  for (let fixedGroup of config.fixed) {
-    let highestPreVersion = getHighestPreVersion(fixedGroup, packagesByName);
-    for (let fixedPackage of fixedGroup) {
-      preVersions.set(fixedPackage, highestPreVersion);
-    }
-  }
-  for (let linkedGroup of config.linked) {
-    let highestPreVersion = getHighestPreVersion(linkedGroup, packagesByName);
-    for (let linkedPackage of linkedGroup) {
-      preVersions.set(linkedPackage, highestPreVersion);
-    }
-  }
-
-  return {
-    state: updatedPreState,
-    preVersions,
   };
 }
 

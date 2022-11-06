@@ -17,7 +17,7 @@ import path from "path";
 import prettier from "prettier";
 
 import versionPackage from "./version-package";
-import getChangelogEntry from "./get-changelog-entry";
+import { getChangelogEntry } from "./get-changelog-entry";
 
 function getPrettierInstance(cwd: string): typeof prettier {
   try {
