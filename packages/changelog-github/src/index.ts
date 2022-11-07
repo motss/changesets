@@ -1,7 +1,10 @@
-import { ChangelogFunctions } from "@changesets/types";
+import { ChangelogFunctions } from "@motss-changesets/types";
 // @ts-ignore
 import { config } from "dotenv";
-import { getInfo, getInfoFromPullRequest } from "@changesets/get-github-info";
+import {
+  getInfo,
+  getInfoFromPullRequest,
+} from "@motss-changesets/get-github-info";
 
 function ensureRepoValid(options) {
   if (!options || !options.repo) {
