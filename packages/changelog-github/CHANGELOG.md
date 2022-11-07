@@ -1,5 +1,11 @@
 # @changesets/changelog-github
 
+## [1.0.0](https://github.com/changesets/changesets/releases/tag/@motss-changesets/changelog-github@1.0.0)
+
+### Major Changes
+
+- [`61a7cc9`](https://github.com/changesets/changesets/commit/61a7cc98fca37dc6fed14931fff612d6462f15e3) ([@motss](https://github.com/motss)) feat!: support options.linksTemplate
+
 ## [0.5.3](https://github.com/changesets/changesets/releases/tag/@motss-changesets/changelog-github@0.5.3)
 
 ### Patch Changes
