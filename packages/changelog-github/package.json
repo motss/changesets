@@ -1,6 +1,6 @@
 {
   "name": "@motss-changesets/changelog-github",
-  "version": "0.5.3",
+  "version": "1.0.0",
   "description": "A changelog entry generator for GitHub that links to commits, PRs and users",
   "main": "dist/changelog-github.cjs.js",
   "module": "dist/changelog-github.esm.js",
