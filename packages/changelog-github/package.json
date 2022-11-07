@@ -5,7 +5,7 @@
   "main": "dist/changelog-github.cjs.js",
   "module": "dist/changelog-github.esm.js",
   "license": "MIT",
-  "repository": "https://github.com/changesets/changesets/tree/main/packages/changelog-github",
+  "repository": "https://github.com/motss/changesets/tree/main/packages/changelog-github",
   "dependencies": {
     "@changesets/get-github-info": "^0.5.5",
     "@changesets/types": "^5.2.4",
